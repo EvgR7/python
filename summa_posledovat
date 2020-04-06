@@ -1,0 +1,8 @@
+def count():
+    a = int(input())
+    if a != 0:
+        return a + count()
+    return 0
+
+
+print(count())
