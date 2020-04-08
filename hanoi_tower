@@ -1,0 +1,11 @@
+def hanoi(n, x, y):
+    if n == 1:
+        print(n, x, y)
+    else:
+        tmp = 6 - (x + y)
+        hanoi(n - 1, x, tmp)
+        print(n, x, y)
+        hanoi(n - 1, tmp, y)
+
+
+hanoi(int(input()), 1, 3)
